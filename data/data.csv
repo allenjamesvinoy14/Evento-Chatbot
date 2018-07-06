@@ -1,0 +1,114 @@
+Query,Action
+What is the price for the event?,get_event_fees
+"Due to unavoidable reasons I'm unable to attend the event, will I get a refund?",is_refundable
+When is the deadline to make the payment?,get_registration_date
+How much does it cost to register for the event?,get_event_fees
+Do you have any online payment options for the event? ,get_payment_method
+When is the last day for payments?,get_registration_date
+When is the last day to pay?,get_event_fees
+Can I pay through paytm or UPI?,get_payment_method
+Can I pay for a ticket at the venue?,get_payment_method
+What are the prizes up for grabs?,get_prizes
+Can I cancel my registration after paying the fees?,is_refundable
+Are there any benefits or discounts?,get_discounts
+Can I get a refund if I can't make it? ,is_refundable
+Do you refund the payment? ,get_payment_method
+"can I pay using Debit cards?, what if my Credit card is not international?",get_payment_method
+Which debit cards can be used?,get_payment_method
+Are there any concessions? What do payenents include? ,
+What is the refund policy? ,is_refundable
+What are the various payment methods?,get_payment_method
+Can I have a refund of my money?,is_refundable
+Can I get the money back?,is_refundable
+Can I pay later for the event?,get_payment_method
+Is on spot registration available?,get_payment_method
+What all Modes of payment are available?,get_payment_method
+What is the schedule for <date>?,show_schedule
+How long is the lunch break?,show_schedule
+When is the event happening?,get_event_date
+What are the timings for <event_name>? ,get_event_time
+What is happening at 4 on August 5?,show_schedule
+Will there be breaks in between technical session on <day>?,show_schedule
+What is happening on the second day?,show_schedule
+At what time does the event end?,get_event_time
+What events are scheduled on august 3rd between 2 to 5?,show_schedule
+The event is related to which domain?,get_event_domain
+Major events on the first day,show_schedule
+When does the event end?,get_event_date
+What is going to happen at 9am on August 4th?,show_schedule
+When does the event start?,get_event_date
+Will be get accomodation,show_accomodation
+Whats happening on 9th July around 9pm?,show_schedule
+I'd like to get the iteanery.,show_schedule
+What is the schedule of the event?,show_schedule
+"What are the events on <date or 1st, 2nd , 3rd day>?",show_schedule
+The sessions are related to which domain?,get_event_domain
+What events are going to happen?,get_event_date
+Can we come a bit late?,get_event_time
+Where can I find the itinerary?,show_schedule
+ Is there any break?,show_schedule
+Who are the speakers for <date>?,show_speakers
+Is there a provision available to meet the speakers after the event?,speaker_details_extra
+Who is the speaker?,show_speakers
+Where are the speakers from? ,show_speakers
+Can I get the email of all the speakers?,show_speakers
+How many speakers are coming and will there be a Q and A?,show_speakers
+How many speakers are going to speak in the event?,show_speakers_count
+How many speakers are there?,show_speakers_count
+Could I know more about the AI Speakers?,show_speakers_details
+I'd like to know about the speakers.,show_speakers_details
+More about the speakers?,show_speakers_details
+Is there a question and answer session with the speakers?,speaker_details_extra
+Who are the speakers at the event? ,show_speakers
+Who all are coming for panel discussions? on what days are the best speakers coming?,show_speakers
+Could I get in touch with a speaker?,speaker_details_extra
+Where are the speakers from? ,show_speaker_details
+Can I have a list of the speakers?,show_speakers
+Who are speaking in this event?,show_speakers
+Who all are going to speak in the events?,show_speakers
+What speakers are coming in the event?,show_speakers
+Can I have a personal chat with them?,speaker_details_extra
+Where are they going to stay?,show_accomodation
+What are the arrangements for food?,show_food_arrangements
+Do you provide unsweetened drinks for diabetics?,show_food_arrangements
+Is food provided for all the days till the event ends? ,show_food_arrangements
+Is food complimentary?,show_food_arrangements
+Does the registration cost involve food? ,show_food_cost
+Whats the scene with meals?,show_food_arrangements
+Is the food unlimited?,show_food_arrangements
+When is lunch going to be served today?,show_schedule
+Is food provided?,show_food_arrangements
+Any payments related to food?,show_food_cost
+Is food provided three times a day?,show_schedule
+Will food and snacks be provided? ,show_food_arrangements
+Do we pay for our own food? How many meals are you providing?,show_food_arrangements
+Is the food complimentary?,show_food_arrangements
+Will food be provided? ,show_food_arrangements
+Are we going to have lunch breaks during the event?,show_schedule
+Can we bring in food from outside?,show_food_arrangements
+What kind of food will be provided?,show_food_arrangements
+Will stay be arranged?,show_accomodation
+How far is the college from the hotel I will be staying at?,show_accomodation_address
+How far away from the event is the accomodation arranged?,show_accomodation_address
+Is accommodation only for participants or for their family too? ,show_accomodation
+Will you be arranging accommodation?,show_accomodation
+Does the accommodation have AC?,show_accomodation
+How far is the accommodation location from the event location?,get_distance
+Do I have to pay separately for accommodation?,show_accomodation_price
+How do I commute to the venue from my accommodation?,show_accomodation
+I'd like to know the details for accommodation.,show_accomodation
+Detailed information regarding accommodation?,show_accomodation
+Will you be booking tickets for us if we pay that money?,show_accomodation_price
+Will accommodation be arranged for participants,show_accomodation
+Do we pay for our own accommodation? How much would it cost?,show_accomodation_price
+Is the accommodation provided?,show_accomodation
+What's the cost of accomodation?,show_accomodation_price
+Whats the scene with accommodation?,show_accomodation
+Are the meals going to be provided along with accommodation?,show_accomodation
+Is the accommodation provided by you?,show_accomodation
+Can I have the details of the stay?,show_accomodation_address
+Is the complimentary food given?,show_food_arrangements
+Is warm water available?,show_accomodation
+Is AC available?,show_accomodation
+Any pictures of the rooms?,show_accomodation
+Any cheaper acco available?,show_accomodation
