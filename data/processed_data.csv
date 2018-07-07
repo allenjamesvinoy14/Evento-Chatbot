@@ -1,0 +1,559 @@
+,Query,Action
+0,What is the price for the event?,get_event_fees
+1,"Due to unavoidable reasons I'm unable to attend the event, will I get a refund?",is_refundable
+2,When is the deadline to make the payment?,get_registration_date
+3,How much does it cost to register for the event?,get_event_fees
+4,Do you have any online payment options for the event? ,get_payment_method
+5,When is the last day for payments?,get_registration_date
+6,When is the last day to pay?,get_event_fees
+7,Can I pay through paytm or UPI?,get_payment_method
+8,Can I pay for a ticket at the venue?,get_payment_method
+9,What are the prizes up for grabs?,get_prizes
+10,Can I cancel my registration after paying the fees?,is_refundable
+11,Are there any benefits or discounts?,get_discounts
+12,Can I get a refund if I can't make it? ,is_refundable
+13,Do you refund the payment? ,get_payment_method
+14,"can I pay using Debit cards?, what if my Credit card is not international?",get_payment_method
+15,Which debit cards can be used?,get_payment_method
+16,Are there any concessions? What do payenents include? ,
+17,What is the refund policy? ,is_refundable
+18,What are the various payment methods?,get_payment_method
+19,Can I have a refund of my money?,is_refundable
+20,Can I get the money back?,is_refundable
+21,Can I pay later for the event?,get_payment_method
+22,Is on spot registration available?,get_payment_method
+23,What all Modes of payment are available?,get_payment_method
+24,What is the schedule for <date>?,show_schedule
+25,How long is the lunch break?,show_schedule
+26,When is the event happening?,get_event_date
+27,What are the timings for <event_name>? ,get_event_time
+28,What is happening at 4 on August 5?,show_schedule
+29,Will there be breaks in between technical session on <day>?,show_schedule
+30,What is happening on the second day?,show_schedule
+31,At what time does the event end?,get_event_time
+32,What events are scheduled on august 3rd between 2 to 5?,show_schedule
+33,The event is related to which domain?,get_event_domain
+34,Major events on the first day,show_schedule
+35,When does the event end?,get_event_date
+36,What is going to happen at 9am on August 4th?,show_schedule
+37,When does the event start?,get_event_date
+38,Will be get accomodation,show_accomodation
+39,Whats happening on 9th July around 9pm?,show_schedule
+40,I'd like to get the iteanery.,show_schedule
+41,What is the schedule of the event?,show_schedule
+42,"What are the events on <date or 1st, 2nd , 3rd day>?",show_schedule
+43,The sessions are related to which domain?,get_event_domain
+44,What events are going to happen?,get_event_date
+45,Can we come a bit late?,get_event_time
+46,Where can I find the itinerary?,show_schedule
+47, Is there any break?,show_schedule
+48,Who are the speakers for <date>?,show_speakers
+49,Is there a provision available to meet the speakers after the event?,speaker_details_extra
+50,Who is the speaker?,show_speakers
+51,Where are the speakers from? ,show_speakers
+52,Can I get the email of all the speakers?,show_speakers
+53,How many speakers are coming and will there be a Q and A?,show_speakers
+54,How many speakers are going to speak in the event?,show_speakers_count
+55,How many speakers are there?,show_speakers_count
+56,Could I know more about the AI Speakers?,show_speakers_details
+57,I'd like to know about the speakers.,show_speakers_details
+58,More about the speakers?,show_speakers_details
+59,Is there a question and answer session with the speakers?,speaker_details_extra
+60,Who are the speakers at the event? ,show_speakers
+61,Who all are coming for panel discussions? on what days are the best speakers coming?,show_speakers
+62,Could I get in touch with a speaker?,speaker_details_extra
+63,Where are the speakers from? ,show_speaker_details
+64,Can I have a list of the speakers?,show_speakers
+65,Who are speaking in this event?,show_speakers
+66,Who all are going to speak in the events?,show_speakers
+67,What speakers are coming in the event?,show_speakers
+68,Can I have a personal chat with them?,speaker_details_extra
+69,Where are they going to stay?,show_accomodation
+70,What are the arrangements for food?,show_food_arrangements
+71,Do you provide unsweetened drinks for diabetics?,show_food_arrangements
+72,Is food provided for all the days till the event ends? ,show_food_arrangements
+73,Is food complimentary?,show_food_arrangements
+74,Does the registration cost involve food? ,show_food_cost
+75,Whats the scene with meals?,show_food_arrangements
+76,Is the food unlimited?,show_food_arrangements
+77,When is lunch going to be served today?,show_schedule
+78,Is food provided?,show_food_arrangements
+79,Any payments related to food?,show_food_cost
+80,Is food provided three times a day?,show_schedule
+81,Will food and snacks be provided? ,show_food_arrangements
+82,Do we pay for our own food? How many meals are you providing?,show_food_arrangements
+83,Is the food complimentary?,show_food_arrangements
+84,Will food be provided? ,show_food_arrangements
+85,Are we going to have lunch breaks during the event?,show_schedule
+86,Can we bring in food from outside?,show_food_arrangements
+87,What kind of food will be provided?,show_food_arrangements
+88,Will stay be arranged?,show_accomodation
+89,How far is the college from the hotel I will be staying at?,show_accomodation_address
+90,How far away from the event is the accomodation arranged?,show_accomodation_address
+91,Is accommodation only for participants or for their family too? ,show_accomodation
+92,Will you be arranging accommodation?,show_accomodation
+93,Does the accommodation have AC?,show_accomodation
+94,How far is the accommodation location from the event location?,get_distance
+95,Do I have to pay separately for accommodation?,show_accomodation_price
+96,How do I commute to the venue from my accommodation?,show_accomodation
+97,I'd like to know the details for accommodation.,show_accomodation
+98,Detailed information regarding accommodation?,show_accomodation
+99,Will you be booking tickets for us if we pay that money?,show_accomodation_price
+100,Will accommodation be arranged for participants,show_accomodation
+101,Do we pay for our own accommodation? How much would it cost?,show_accomodation_price
+102,Is the accommodation provided?,show_accomodation
+103,What's the cost of accomodation?,show_accomodation_price
+104,Whats the scene with accommodation?,show_accomodation
+105,Are the meals going to be provided along with accommodation?,show_accomodation
+106,Is the accommodation provided by you?,show_accomodation
+107,Can I have the details of the stay?,show_accomodation_address
+108,Is the complimentary food given?,show_food_arrangements
+109,Is warm water available?,show_accomodation
+110,Is AC available?,show_accomodation
+111,Any pictures of the rooms?,show_accomodation
+112,Any cheaper acco available?,show_accomodation
+0,"Due to certain reasons I 'm unable to attend the event , will I get a refund ?",is_refundable
+0,"Due to inescapable reasons I 'm unable to attend the event , will I get a refund ?",is_refundable
+0,"Due to inevitable reasons I 'm unable to attend the event , will I get a refund ?",is_refundable
+0,"Due to necessary reasons I 'm unable to attend the event , will I get a refund ?",is_refundable
+0,"Due to unavoidable logic I 'm unable to attend the event , will I get a refund ?",is_refundable
+0,"Due to unavoidable reasoning I 'm unable to attend the event , will I get a refund ?",is_refundable
+0,"Due to unavoidable sense I 'm unable to attend the event , will I get a refund ?",is_refundable
+0,"Due to unavoidable reasons I 'm helpless to attend the event , will I get a refund ?",is_refundable
+0,"Due to unavoidable reasons I 'm impotent to attend the event , will I get a refund ?",is_refundable
+0,"Due to unavoidable reasons I 'm inadequate to attend the event , will I get a refund ?",is_refundable
+0,"Due to unavoidable reasons I 'm incapable to attend the event , will I get a refund ?",is_refundable
+0,"Due to unavoidable reasons I 'm unable to show up the event , will I get a refund ?",is_refundable
+0,"Due to unavoidable reasons I 'm unable to visit the event , will I get a refund ?",is_refundable
+0,"Due to unavoidable reasons I 'm unable to attend the event , will I get an allowance ?",is_refundable
+0,"Due to unavoidable reasons I 'm unable to attend the event , will I get an compensation ?",is_refundable
+0,"Due to unavoidable reasons I 'm unable to attend the event , will I get an discount ?",is_refundable
+0,"Due to unavoidable reasons I 'm unable to attend the event , will I get an kickback ?",is_refundable
+0,When is the limit to make the payment ?,get_registration_date
+0,When is the period to make the payment ?,get_registration_date
+0,When is the time limit to make the payment ?,get_registration_date
+0,When is the deadline to make the amount ?,get_registration_date
+0,When is the deadline to make the award ?,get_registration_date
+0,When is the deadline to make the cash ?,get_registration_date
+0,When is the deadline to make the deposit ?,get_registration_date
+0,How much does it cost to registry for the event ?,get_event_fees
+0,How much does it cost to roster for the event ?,get_event_fees
+0,Do you have any wired payment options for the event ?,get_payment_method
+0,Do you have any online amount options for the event ?,get_payment_method
+0,Do you have any online award options for the event ?,get_payment_method
+0,Do you have any online cash options for the event ?,get_payment_method
+0,Do you have any online deposit options for the event ?,get_payment_method
+0,Do you have any online payment benefit for the event ?,get_payment_method
+0,Do you have any online payment choice for the event ?,get_payment_method
+0,Do you have any online payment opportunity for the event ?,get_payment_method
+0,Do you have any online payment preference for the event ?,get_payment_method
+0,When is the last day for amount ?,get_registration_date
+0,When is the last day for award ?,get_registration_date
+0,When is the last day for cash ?,get_registration_date
+0,When is the last day for deposit ?,get_registration_date
+0,Can I pay over paytm or UPI ?,get_payment_method
+0,Can I pay for an admission at the venue ?,get_payment_method
+0,Can I pay for an card at the venue ?,get_payment_method
+0,Can I pay for an certificate at the venue ?,get_payment_method
+0,Can I pay for an check at the venue ?,get_payment_method
+0,What are the accolade up for grabs ?,get_prizes
+0,What are the advantage up for grabs ?,get_prizes
+0,What are the bonus up for grabs ?,get_prizes
+0,What are the bounty up for grabs ?,get_prizes
+0,Can I abolish my registration after paying the fees ?,is_refundable
+0,Can I abort my registration after paying the fees ?,is_refundable
+0,Can I annul my registration after paying the fees ?,is_refundable
+0,Can I break off my registration after paying the fees ?,is_refundable
+0,Can I cancel my booking after paying the fees ?,is_refundable
+0,Can I cancel my certification after paying the fees ?,is_refundable
+0,Can I cancel my enrollment after paying the fees ?,is_refundable
+0,Can I cancel my filing after paying the fees ?,is_refundable
+0,Can I cancel my registration after compensate the fees ?,is_refundable
+0,Can I cancel my registration after disburse the fees ?,is_refundable
+0,Can I cancel my registration after extend the fees ?,is_refundable
+0,Can I cancel my registration after grant the fees ?,is_refundable
+0,Are there any aid or discounts ?,get_discounts
+0,Are there any asset or discounts ?,get_discounts
+0,Are there any assistance or discounts ?,get_discounts
+0,Are there any gain or discounts ?,get_discounts
+0,Are there any benefits or allowance ?,get_discounts
+0,Are there any benefits or concession ?,get_discounts
+0,Are there any benefits or decrease ?,get_discounts
+0,Are there any benefits or deduction ?,get_discounts
+0,Can I get an allowance if I ca n't make it ?,is_refundable
+0,Can I get an compensation if I ca n't make it ?,is_refundable
+0,Can I get an discount if I ca n't make it ?,is_refundable
+0,Can I get an kickback if I ca n't make it ?,is_refundable
+0,Do you allowance the payment ?,get_payment_method
+0,Do you compensation the payment ?,get_payment_method
+0,Do you discount the payment ?,get_payment_method
+0,Do you kickback the payment ?,get_payment_method
+0,Do you refund the amount ?,get_payment_method
+0,Do you refund the award ?,get_payment_method
+0,Do you refund the cash ?,get_payment_method
+0,Do you refund the deposit ?,get_payment_method
+0,"can I pay using Debit cards ? , what if my attention card is not international ?",get_payment_method
+0,"can I pay using Debit cards ? , what if my Credit card is not foreign ?",get_payment_method
+0,"can I pay using Debit cards ? , what if my Credit card is not global ?",get_payment_method
+0,"can I pay using Debit cards ? , what if my Credit card is not universal ?",get_payment_method
+0,Are there any acknowledgment ? What do payenents include ?,
+0,Are there any admission ? What do payenents include ?,
+0,Are there any compromise ? What do payenents include ?,
+0,Are there any deal ? What do payenents include ?,
+0,Are there any concessions ? What do payenents add ?,
+0,Are there any concessions ? What do payenents build ?,
+0,Are there any concessions ? What do payenents carry ?,
+0,Are there any concessions ? What do payenents combine ?,
+0,What is the allowance policy ?,is_refundable
+0,What is the compensation policy ?,is_refundable
+0,What is the discount policy ?,is_refundable
+0,What is the kickback policy ?,is_refundable
+0,What is the refund action ?,is_refundable
+0,What is the refund administration ?,is_refundable
+0,What is the refund approach ?,is_refundable
+0,What is the refund arrangement ?,is_refundable
+0,What are the assorted payment methods ?,get_payment_method
+0,What are the different payment methods ?,get_payment_method
+0,What are the discrete payment methods ?,get_payment_method
+0,What are the disparate payment methods ?,get_payment_method
+0,What are the various amount methods ?,get_payment_method
+0,What are the various award methods ?,get_payment_method
+0,What are the various cash methods ?,get_payment_method
+0,What are the various deposit methods ?,get_payment_method
+0,What are the various payment approach ?,get_payment_method
+0,What are the various payment arrangement ?,get_payment_method
+0,What are the various payment design ?,get_payment_method
+0,What are the various payment form ?,get_payment_method
+0,Can I have an allowance of my money ?,is_refundable
+0,Can I have an compensation of my money ?,is_refundable
+0,Can I have an discount of my money ?,is_refundable
+0,Can I have an kickback of my money ?,is_refundable
+0,Is on spot booking available ?,get_payment_method
+0,Is on spot certification available ?,get_payment_method
+0,Is on spot enrollment available ?,get_payment_method
+0,Is on spot filing available ?,get_payment_method
+0,Is on spot registration accessible ?,get_payment_method
+0,Is on spot registration applicable ?,get_payment_method
+0,Is on spot registration convenient ?,get_payment_method
+0,Is on spot registration feasible ?,get_payment_method
+0,What all Modes of amount are available ?,get_payment_method
+0,What all Modes of award are available ?,get_payment_method
+0,What all Modes of cash are available ?,get_payment_method
+0,What all Modes of deposit are available ?,get_payment_method
+0,What all Modes of payment are accessible ?,get_payment_method
+0,What all Modes of payment are applicable ?,get_payment_method
+0,What all Modes of payment are convenient ?,get_payment_method
+0,What all Modes of payment are feasible ?,get_payment_method
+0,What is the agenda for < date > ?,show_schedule
+0,What is the calendar for < date > ?,show_schedule
+0,What is the chart for < date > ?,show_schedule
+0,What is the itinerary for < date > ?,show_schedule
+0,When is the event accident ?,get_event_date
+0,When is the event adventure ?,get_event_date
+0,When is the event circumstance ?,get_event_date
+0,When is the event incident ?,get_event_date
+0,What is accident at 4 on August 5 ?,show_schedule
+0,What is adventure at 4 on August 5 ?,show_schedule
+0,What is circumstance at 4 on August 5 ?,show_schedule
+0,What is incident at 4 on August 5 ?,show_schedule
+0,Will there be crack in between technical session on < day > ?,show_schedule
+0,Will there be gap in between technical session on < day > ?,show_schedule
+0,Will there be hole in between technical session on < day > ?,show_schedule
+0,Will there be breaks in between high-tech session on < day > ?,show_schedule
+0,Will there be breaks in between industrial session on < day > ?,show_schedule
+0,Will there be breaks in between mechanical session on < day > ?,show_schedule
+0,Will there be breaks in between professional session on < day > ?,show_schedule
+0,Will there be breaks in between technical conference on < day > ?,show_schedule
+0,Will there be breaks in between technical discussion on < day > ?,show_schedule
+0,Will there be breaks in between technical hearing on < day > ?,show_schedule
+0,Will there be breaks in between technical period on < day > ?,show_schedule
+0,What is accident on the second day ?,show_schedule
+0,What is adventure on the second day ?,show_schedule
+0,What is circumstance on the second day ?,show_schedule
+0,What is incident on the second day ?,show_schedule
+0,What accident are scheduled on august 3rd between 2 to 5 ?,show_schedule
+0,What act are scheduled on august 3rd between 2 to 5 ?,show_schedule
+0,What action are scheduled on august 3rd between 2 to 5 ?,show_schedule
+0,What affair are scheduled on august 3rd between 2 to 5 ?,show_schedule
+0,What events are anticipated on august 3rd between 2 to 5 ?,show_schedule
+0,What events are expected on august 3rd between 2 to 5 ?,show_schedule
+0,The event is akin to which domain ?,get_event_domain
+0,The event is analogous to which domain ?,get_event_domain
+0,The event is associated to which domain ?,get_event_domain
+0,The event is complementary to which domain ?,get_event_domain
+0,The event is related to which realm ?,get_event_domain
+0,The event is related to which sphere ?,get_event_domain
+0,The event is related to which territory ?,get_event_domain
+0,Major accident on the first day,show_schedule
+0,Major act on the first day,show_schedule
+0,Major action on the first day,show_schedule
+0,Major affair on the first day,show_schedule
+0,What is going to appear at 9am on August 4th ?,show_schedule
+0,What is going to arise at 9am on August 4th ?,show_schedule
+0,What is going to arrive at 9am on August 4th ?,show_schedule
+0,What is going to crop up at 9am on August 4th ?,show_schedule
+0,Whats accident on 9th July around 9pm ?,show_schedule
+0,Whats adventure on 9th July around 9pm ?,show_schedule
+0,Whats circumstance on 9th July around 9pm ?,show_schedule
+0,Whats incident on 9th July around 9pm ?,show_schedule
+0,Whats happening on 9th July about 9pm ?,show_schedule
+0,Whats happening on 9th July everywhere 9pm ?,show_schedule
+0,Whats happening on 9th July over 9pm ?,show_schedule
+0,What is the agenda of the event ?,show_schedule
+0,What is the calendar of the event ?,show_schedule
+0,What is the chart of the event ?,show_schedule
+0,What is the itinerary of the event ?,show_schedule
+0,"What are the accident on < date or 1st , 2nd , 3rd day > ?",show_schedule
+0,"What are the act on < date or 1st , 2nd , 3rd day > ?",show_schedule
+0,"What are the action on < date or 1st , 2nd , 3rd day > ?",show_schedule
+0,"What are the affair on < date or 1st , 2nd , 3rd day > ?",show_schedule
+0,The conference are related to which domain ?,get_event_domain
+0,The discussion are related to which domain ?,get_event_domain
+0,The hearing are related to which domain ?,get_event_domain
+0,The period are related to which domain ?,get_event_domain
+0,The sessions are akin to which domain ?,get_event_domain
+0,The sessions are analogous to which domain ?,get_event_domain
+0,The sessions are associated to which domain ?,get_event_domain
+0,The sessions are complementary to which domain ?,get_event_domain
+0,The sessions are related to which realm ?,get_event_domain
+0,The sessions are related to which sphere ?,get_event_domain
+0,The sessions are related to which territory ?,get_event_domain
+0,What accident are going to happen ?,get_event_date
+0,What act are going to happen ?,get_event_date
+0,What action are going to happen ?,get_event_date
+0,What affair are going to happen ?,get_event_date
+0,What events are going to appear ?,get_event_date
+0,What events are going to arise ?,get_event_date
+0,What events are going to arrive ?,get_event_date
+0,What events are going to crop up ?,get_event_date
+0,Where can I find the guidebook ?,show_schedule
+0,Where can I find the journey ?,show_schedule
+0,Where can I find the path ?,show_schedule
+0,Where can I find the route ?,show_schedule
+0,Is there an arrangement available to meet the speakers after the event ?,speaker_details_extra
+0,Is there an plan available to meet the speakers after the event ?,speaker_details_extra
+0,Is there a provision accessible to meet the speakers after the event ?,speaker_details_extra
+0,Is there a provision applicable to meet the speakers after the event ?,speaker_details_extra
+0,Is there a provision convenient to meet the speakers after the event ?,speaker_details_extra
+0,Is there a provision feasible to meet the speakers after the event ?,speaker_details_extra
+0,How many speakers are anticipated and will there be a Q and A ?,show_speakers
+0,How many speakers are expected and will there be a Q and A ?,show_speakers
+0,How many speakers are forthcoming and will there be a Q and A ?,show_speakers
+0,How many speakers are impending and will there be a Q and A ?,show_speakers
+0,Is there an inquiry and answer session with the speakers ?,speaker_details_extra
+0,Is there an investigation and answer session with the speakers ?,speaker_details_extra
+0,Is there an query and answer session with the speakers ?,speaker_details_extra
+0,Is there an questioning and answer session with the speakers ?,speaker_details_extra
+0,Is there a question and comment session with the speakers ?,speaker_details_extra
+0,Is there a question and explanation session with the speakers ?,speaker_details_extra
+0,Is there a question and feedback session with the speakers ?,speaker_details_extra
+0,Is there a question and interpretation session with the speakers ?,speaker_details_extra
+0,Is there a question and answer conference with the speakers ?,speaker_details_extra
+0,Is there a question and answer discussion with the speakers ?,speaker_details_extra
+0,Is there a question and answer hearing with the speakers ?,speaker_details_extra
+0,Is there a question and answer period with the speakers ?,speaker_details_extra
+0,Who all are anticipated for panel discussions ? on what days are the best speakers coming ?,show_speakers
+0,Who all are expected for panel discussions ? on what days are the best speakers coming ?,show_speakers
+0,Who all are forthcoming for panel discussions ? on what days are the best speakers coming ?,show_speakers
+0,Who all are impending for panel discussions ? on what days are the best speakers coming ?,show_speakers
+0,Who all are coming for panel analysis ? on what days are the best speakers coming ?,show_speakers
+0,Who all are coming for panel argument ? on what days are the best speakers coming ?,show_speakers
+0,Who all are coming for panel conference ? on what days are the best speakers coming ?,show_speakers
+0,Who all are coming for panel consideration ? on what days are the best speakers coming ?,show_speakers
+0,Who all are going to speak in the accident ?,show_speakers
+0,Who all are going to speak in the act ?,show_speakers
+0,Who all are going to speak in the action ?,show_speakers
+0,Who all are going to speak in the affair ?,show_speakers
+0,What speakers are anticipated in the event ?,show_speakers
+0,What speakers are expected in the event ?,show_speakers
+0,What speakers are forthcoming in the event ?,show_speakers
+0,What speakers are impending in the event ?,show_speakers
+0,Can I have an intimate chat with them ?,speaker_details_extra
+0,Can I have an particular chat with them ?,speaker_details_extra
+0,Can I have an secret chat with them ?,speaker_details_extra
+0,Can I have an special chat with them ?,speaker_details_extra
+0,Do you add unsweetened drinks for diabetics ?,show_food_arrangements
+0,Do you administer unsweetened drinks for diabetics ?,show_food_arrangements
+0,Do you afford unsweetened drinks for diabetics ?,show_food_arrangements
+0,Do you arrange unsweetened drinks for diabetics ?,show_food_arrangements
+0,Do you provide harsh drinks for diabetics ?,show_food_arrangements
+0,Do you provide sour drinks for diabetics ?,show_food_arrangements
+0,Do you provide unsweetened alcohol for diabetics ?,show_food_arrangements
+0,Do you provide unsweetened booze for diabetics ?,show_food_arrangements
+0,Do you provide unsweetened brew for diabetics ?,show_food_arrangements
+0,Do you provide unsweetened cup for diabetics ?,show_food_arrangements
+0,Is food add for all the days till the event ends ?,show_food_arrangements
+0,Is food administer for all the days till the event ends ?,show_food_arrangements
+0,Is food afford for all the days till the event ends ?,show_food_arrangements
+0,Is food arrange for all the days till the event ends ?,show_food_arrangements
+0,Is food appreciative ?,show_food_arrangements
+0,Is food congratulatory ?,show_food_arrangements
+0,Is food polite ?,show_food_arrangements
+0,Is food respectful ?,show_food_arrangements
+0,Does the booking cost involve food ?,show_food_cost
+0,Does the certification cost involve food ?,show_food_cost
+0,Does the enrollment cost involve food ?,show_food_cost
+0,Does the filing cost involve food ?,show_food_cost
+0,Does the registration cost affect food ?,show_food_cost
+0,Does the registration cost associate food ?,show_food_cost
+0,Does the registration cost catch food ?,show_food_cost
+0,Does the registration cost commit food ?,show_food_cost
+0,Is the food absolute ?,show_food_arrangements
+0,Is the food boundless ?,show_food_arrangements
+0,Is the food endless ?,show_food_arrangements
+0,Is the food immeasurable ?,show_food_arrangements
+0,Is food add ?,show_food_arrangements
+0,Is food administer ?,show_food_arrangements
+0,Is food afford ?,show_food_arrangements
+0,Is food arrange ?,show_food_arrangements
+0,Any amount related to food ?,show_food_cost
+0,Any award related to food ?,show_food_cost
+0,Any cash related to food ?,show_food_cost
+0,Any deposit related to food ?,show_food_cost
+0,Any payments akin to food ?,show_food_cost
+0,Any payments analogous to food ?,show_food_cost
+0,Any payments associated to food ?,show_food_cost
+0,Any payments complementary to food ?,show_food_cost
+0,Is food add three times a day ?,show_schedule
+0,Is food administer three times a day ?,show_schedule
+0,Is food afford three times a day ?,show_schedule
+0,Is food arrange three times a day ?,show_schedule
+0,Will food and lunch be provided ?,show_food_arrangements
+0,Will food and morsel be provided ?,show_food_arrangements
+0,Will food and refreshment be provided ?,show_food_arrangements
+0,Will food and tea be provided ?,show_food_arrangements
+0,Will food and snacks be add ?,show_food_arrangements
+0,Will food and snacks be administer ?,show_food_arrangements
+0,Will food and snacks be afford ?,show_food_arrangements
+0,Will food and snacks be arrange ?,show_food_arrangements
+0,Is the food appreciative ?,show_food_arrangements
+0,Is the food congratulatory ?,show_food_arrangements
+0,Is the food polite ?,show_food_arrangements
+0,Is the food respectful ?,show_food_arrangements
+0,Will food be add ?,show_food_arrangements
+0,Will food be administer ?,show_food_arrangements
+0,Will food be afford ?,show_food_arrangements
+0,Will food be arrange ?,show_food_arrangements
+0,Are we going to have lunch crack during the event ?,show_schedule
+0,Are we going to have lunch gap during the event ?,show_schedule
+0,Are we going to have lunch hole during the event ?,show_schedule
+0,Can we bring in food from farther ?,show_food_arrangements
+0,Can we bring in food from foreign ?,show_food_arrangements
+0,Can we bring in food from out ?,show_food_arrangements
+0,What kind of food will be add ?,show_food_arrangements
+0,What kind of food will be administer ?,show_food_arrangements
+0,What kind of food will be afford ?,show_food_arrangements
+0,What kind of food will be arrange ?,show_food_arrangements
+0,Will stay be file ?,show_accomodation
+0,Will stay be form ?,show_accomodation
+0,Will stay be organize ?,show_accomodation
+0,How far is the college from the hotel I will be continue at ?,show_accomodation_address
+0,How far is the college from the hotel I will be delay at ?,show_accomodation_address
+0,How far is the college from the hotel I will be hang at ?,show_accomodation_address
+0,How far is the college from the hotel I will be last at ?,show_accomodation_address
+0,How far away from the event is the accomodation file ?,show_accomodation_address
+0,How far away from the event is the accomodation form ?,show_accomodation_address
+0,How far away from the event is the accomodation organize ?,show_accomodation_address
+0,Is compromise only for participants or for their family too ?,show_accomodation
+0,Is reconciliation only for participants or for their family too ?,show_accomodation
+0,Is accommodation only for colleague or for their family too ?,show_accomodation
+0,Is accommodation only for member or for their family too ?,show_accomodation
+0,Is accommodation only for partner or for their family too ?,show_accomodation
+0,Is accommodation only for party or for their family too ?,show_accomodation
+0,Is accommodation only for participants or for their clan too ?,show_accomodation
+0,Is accommodation only for participants or for their folk too ?,show_accomodation
+0,Is accommodation only for participants or for their group too ?,show_accomodation
+0,Is accommodation only for participants or for their house too ?,show_accomodation
+0,Will you be file accommodation ?,show_accomodation
+0,Will you be form accommodation ?,show_accomodation
+0,Will you be organize accommodation ?,show_accomodation
+0,Will you be arranging compromise ?,show_accomodation
+0,Will you be arranging reconciliation ?,show_accomodation
+0,Does the compromise have AC ?,show_accomodation
+0,Does the reconciliation have AC ?,show_accomodation
+0,How far is the compromise location from the event location ?,get_distance
+0,How far is the reconciliation location from the event location ?,get_distance
+0,How far is the accommodation area from the event location ?,get_distance
+0,How far is the accommodation district from the event location ?,get_distance
+0,How far is the accommodation locale from the event location ?,get_distance
+0,How far is the accommodation neighborhood from the event location ?,get_distance
+0,Do I have to pay independently for accommodation ?,show_accomodation_price
+0,Do I have to pay personally for accommodation ?,show_accomodation_price
+0,Do I have to pay solely for accommodation ?,show_accomodation_price
+0,Do I have to pay separately for compromise ?,show_accomodation_price
+0,Do I have to pay separately for reconciliation ?,show_accomodation_price
+0,How do I commute to the venue from my compromise ?,show_accomodation
+0,How do I commute to the venue from my reconciliation ?,show_accomodation
+0,I 'd like to know the minutiae for accommodation .,show_accomodation
+0,I 'd like to know the details for compromise .,show_accomodation
+0,I 'd like to know the details for reconciliation .,show_accomodation
+0,accurate information regarding accommodation ?,show_accomodation
+0,complicated information regarding accommodation ?,show_accomodation
+0,comprehensive information regarding accommodation ?,show_accomodation
+0,definite information regarding accommodation ?,show_accomodation
+0,Detailed advice regarding accommodation ?,show_accomodation
+0,Detailed clue regarding accommodation ?,show_accomodation
+0,Detailed data regarding accommodation ?,show_accomodation
+0,Detailed info regarding accommodation ?,show_accomodation
+0,Detailed information regarding compromise ?,show_accomodation
+0,Detailed information regarding reconciliation ?,show_accomodation
+0,Will you be booking admission for us if we pay that money ?,show_accomodation_price
+0,Will you be booking card for us if we pay that money ?,show_accomodation_price
+0,Will you be booking certificate for us if we pay that money ?,show_accomodation_price
+0,Will you be booking check for us if we pay that money ?,show_accomodation_price
+0,Will compromise be arranged for participants,show_accomodation
+0,Will reconciliation be arranged for participants,show_accomodation
+0,Will accommodation be file for participants,show_accomodation
+0,Will accommodation be form for participants,show_accomodation
+0,Will accommodation be organize for participants,show_accomodation
+0,Will accommodation be arranged for colleague,show_accomodation
+0,Will accommodation be arranged for member,show_accomodation
+0,Will accommodation be arranged for partner,show_accomodation
+0,Will accommodation be arranged for party,show_accomodation
+0,Do we pay for our own compromise ? How much would it cost ?,show_accomodation_price
+0,Do we pay for our own reconciliation ? How much would it cost ?,show_accomodation_price
+0,Is the compromise provided ?,show_accomodation
+0,Is the reconciliation provided ?,show_accomodation
+0,Is the accommodation add ?,show_accomodation
+0,Is the accommodation administer ?,show_accomodation
+0,Is the accommodation afford ?,show_accomodation
+0,Is the accommodation arrange ?,show_accomodation
+0,Whats the scene with compromise ?,show_accomodation
+0,Whats the scene with reconciliation ?,show_accomodation
+0,Are the meals going to be add along with accommodation ?,show_accomodation
+0,Are the meals going to be administer along with accommodation ?,show_accomodation
+0,Are the meals going to be afford along with accommodation ?,show_accomodation
+0,Are the meals going to be arrange along with accommodation ?,show_accomodation
+0,Are the meals going to be provided along with compromise ?,show_accomodation
+0,Are the meals going to be provided along with reconciliation ?,show_accomodation
+0,Is the compromise provided by you ?,show_accomodation
+0,Is the reconciliation provided by you ?,show_accomodation
+0,Is the accommodation add by you ?,show_accomodation
+0,Is the accommodation administer by you ?,show_accomodation
+0,Is the accommodation afford by you ?,show_accomodation
+0,Is the accommodation arrange by you ?,show_accomodation
+0,Can I have the minutiae of the stay ?,show_accomodation_address
+0,Is the appreciative food given ?,show_food_arrangements
+0,Is the congratulatory food given ?,show_food_arrangements
+0,Is the polite food given ?,show_food_arrangements
+0,Is the respectful food given ?,show_food_arrangements
+0,Is warm water accessible ?,show_accomodation
+0,Is warm water applicable ?,show_accomodation
+0,Is warm water convenient ?,show_accomodation
+0,Is warm water feasible ?,show_accomodation
+0,Is AC accessible ?,show_accomodation
+0,Is AC applicable ?,show_accomodation
+0,Is AC convenient ?,show_accomodation
+0,Is AC feasible ?,show_accomodation
+0,Any account of the rooms ?,show_accomodation
+0,Any art of the rooms ?,show_accomodation
+0,Any cartoon of the rooms ?,show_accomodation
+0,Any copy of the rooms ?,show_accomodation
+0,Any competitive acco available ?,show_accomodation
+0,Any economical acco available ?,show_accomodation
+0,Any low-cost acco available ?,show_accomodation
+0,Any low-priced acco available ?,show_accomodation
+0,Any cheaper acco accessible ?,show_accomodation
+0,Any cheaper acco applicable ?,show_accomodation
+0,Any cheaper acco convenient ?,show_accomodation
+0,Any cheaper acco feasible ?,show_accomodation
