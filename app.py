@@ -1,41 +1,44 @@
-from flask import Flask,abort
-import pandas as pd
-import numpy as np
-import nltk
-from keras.models import model_from_json
-import functions
+import Evento as ev
+from flask import Flask,request,render_template
+import keras.models
+from load import *
 from keras.preprocessing.sequence import pad_sequences
+import numpy as np
 
 
-
-json_file = open('Model/model.json', 'r')
-loaded_model_json = json_file.read()
-json_file.close()
-model = model_from_json(loaded_model_json)
-# load weights into new model
-model.load_weights("Model/model.h5")
-print("Loaded model from disk")
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET', 'POST'])
-def hello_world():
-    return 'Hello, World!'
+global model,graph
+model,graph = init()
 
-
-
-@app.route('/api', methods=['GET', 'POST'])
+evento_obj = ev.Evento()
+evento_obj.process_data()
 
 def get_prediction(query):
-    query = "where is the food from?"
-    mat = functions.get_embed_matrix(query)
-    x = pad_sequences(maxlen=18, sequences=[mat], padding="post", value=vocab.index('PAD'))
+    
+    mat = evento_obj.get_embed_matrix(query)
+    x = pad_sequences(maxlen=18, sequences=[mat], padding="post", value=evento_obj.vocab.index('PAD'))
     ans = np.argmax(model.predict(x)[0])
-    return action_index_1[ans]
+    return evento_obj.action_index_1[ans]
 
+
+
+@app.route('/')
+def index():
+    return render_template('home.html')
+
+@app.route('/predict',methods=['GET','POST'])
+def predict():
+
+    query = request.form['query']
+    with graph.as_default():
+
+        action = get_prediction(query)
+        return action
 
 
 
 
 if __name__ == '__main__':
-    app.run( debug = True)
+    app.run(port = 9000, debug = True)
