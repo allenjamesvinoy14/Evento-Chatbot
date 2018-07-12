@@ -35,7 +35,7 @@ def predict():
     with graph.as_default():
 
         action = get_prediction(query)
-        return action
+        return render_template("predict.html",output=action)
 
 
 
