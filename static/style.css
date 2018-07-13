@@ -1,0 +1,18 @@
+body {
+    background-color: #5AD2F4
+}
+
+div form {
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 15%;
+    padding-left: 15%;
+    border-radius: 20pt;
+    box-shadow: 1px 1px 1px 1px #000d01;
+}
