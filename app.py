@@ -4,7 +4,9 @@ import keras.models
 from load import *
 from keras.preprocessing.sequence import pad_sequences
 import numpy as np
+import os
 
+port = int(os.environ['PORT'])
 
 
 app = Flask(__name__)
@@ -41,4 +43,4 @@ def predict():
 
 
 if __name__ == '__main__':
-    app.run(port = 33507, debug = True)
+    app.run(port = port, debug = True)
