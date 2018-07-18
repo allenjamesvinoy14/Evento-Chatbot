@@ -1,114 +1,309 @@
-Query,Action
-What is the price for the event?,get_event_fees
-"Due to unavoidable reasons I'm unable to attend the event, will I get a refund?",is_refundable
-When is the deadline to make the payment?,get_registration_date
-How much does it cost to register for the event?,get_event_fees
-Do you have any online payment options for the event? ,get_payment_method
-When is the last day for payments?,get_registration_date
-When is the last day to pay?,get_event_fees
-Can I pay through paytm or UPI?,get_payment_method
-Can I pay for a ticket at the venue?,get_payment_method
-What are the prizes up for grabs?,get_prizes
-Can I cancel my registration after paying the fees?,is_refundable
-Are there any benefits or discounts?,get_discounts
-Can I get a refund if I can't make it? ,is_refundable
-Do you refund the payment? ,get_payment_method
-"can I pay using Debit cards?, what if my Credit card is not international?",get_payment_method
-Which debit cards can be used?,get_payment_method
-Are there any concessions? What do payenents include? ,
-What is the refund policy? ,is_refundable
-What are the various payment methods?,get_payment_method
-Can I have a refund of my money?,is_refundable
-Can I get the money back?,is_refundable
-Can I pay later for the event?,get_payment_method
-Is on spot registration available?,get_payment_method
-What all Modes of payment are available?,get_payment_method
-What is the schedule for <date>?,show_schedule
-How long is the lunch break?,show_schedule
-When is the event happening?,get_event_date
-What are the timings for <event_name>? ,get_event_time
-What is happening at 4 on August 5?,show_schedule
-Will there be breaks in between technical session on <day>?,show_schedule
-What is happening on the second day?,show_schedule
-At what time does the event end?,get_event_time
-What events are scheduled on august 3rd between 2 to 5?,show_schedule
-The event is related to which domain?,get_event_domain
-Major events on the first day,show_schedule
-When does the event end?,get_event_date
-What is going to happen at 9am on August 4th?,show_schedule
-When does the event start?,get_event_date
-Will be get accomodation,show_accomodation
-Whats happening on 9th July around 9pm?,show_schedule
-I'd like to get the iteanery.,show_schedule
-What is the schedule of the event?,show_schedule
-"What are the events on <date or 1st, 2nd , 3rd day>?",show_schedule
-The sessions are related to which domain?,get_event_domain
-What events are going to happen?,get_event_date
-Can we come a bit late?,get_event_time
-Where can I find the itinerary?,show_schedule
- Is there any break?,show_schedule
-Who are the speakers for <date>?,show_speakers
-Is there a provision available to meet the speakers after the event?,speaker_details_extra
-Who is the speaker?,show_speakers
-Where are the speakers from? ,show_speakers
-Can I get the email of all the speakers?,show_speakers
-How many speakers are coming and will there be a Q and A?,show_speakers
-How many speakers are going to speak in the event?,show_speakers_count
-How many speakers are there?,show_speakers_count
-Could I know more about the AI Speakers?,show_speakers_details
-I'd like to know about the speakers.,show_speakers_details
-More about the speakers?,show_speakers_details
-Is there a question and answer session with the speakers?,speaker_details_extra
-Who are the speakers at the event? ,show_speakers
-Who all are coming for panel discussions? on what days are the best speakers coming?,show_speakers
-Could I get in touch with a speaker?,speaker_details_extra
-Where are the speakers from? ,show_speaker_details
-Can I have a list of the speakers?,show_speakers
-Who are speaking in this event?,show_speakers
-Who all are going to speak in the events?,show_speakers
-What speakers are coming in the event?,show_speakers
-Can I have a personal chat with them?,speaker_details_extra
-Where are they going to stay?,show_accomodation
-What are the arrangements for food?,show_food_arrangements
-Do you provide unsweetened drinks for diabetics?,show_food_arrangements
-Is food provided for all the days till the event ends? ,show_food_arrangements
-Is food complimentary?,show_food_arrangements
-Does the registration cost involve food? ,show_food_cost
-Whats the scene with meals?,show_food_arrangements
-Is the food unlimited?,show_food_arrangements
-When is lunch going to be served today?,show_schedule
-Is food provided?,show_food_arrangements
-Any payments related to food?,show_food_cost
-Is food provided three times a day?,show_schedule
-Will food and snacks be provided? ,show_food_arrangements
-Do we pay for our own food? How many meals are you providing?,show_food_arrangements
-Is the food complimentary?,show_food_arrangements
-Will food be provided? ,show_food_arrangements
-Are we going to have lunch breaks during the event?,show_schedule
-Can we bring in food from outside?,show_food_arrangements
-What kind of food will be provided?,show_food_arrangements
-Will stay be arranged?,show_accomodation
-How far is the college from the hotel I will be staying at?,show_accomodation_address
-How far away from the event is the accomodation arranged?,show_accomodation_address
-Is accommodation only for participants or for their family too? ,show_accomodation
-Will you be arranging accommodation?,show_accomodation
-Does the accommodation have AC?,show_accomodation
-How far is the accommodation location from the event location?,get_distance
-Do I have to pay separately for accommodation?,show_accomodation_price
-How do I commute to the venue from my accommodation?,show_accomodation
-I'd like to know the details for accommodation.,show_accomodation
-Detailed information regarding accommodation?,show_accomodation
-Will you be booking tickets for us if we pay that money?,show_accomodation_price
-Will accommodation be arranged for participants,show_accomodation
-Do we pay for our own accommodation? How much would it cost?,show_accomodation_price
-Is the accommodation provided?,show_accomodation
-What's the cost of accomodation?,show_accomodation_price
-Whats the scene with accommodation?,show_accomodation
-Are the meals going to be provided along with accommodation?,show_accomodation
-Is the accommodation provided by you?,show_accomodation
-Can I have the details of the stay?,show_accomodation_address
-Is the complimentary food given?,show_food_arrangements
-Is warm water available?,show_accomodation
-Is AC available?,show_accomodation
-Any pictures of the rooms?,show_accomodation
-Any cheaper acco available?,show_accomodation
+,Unnamed: 0,Query,Action
+0,0,What is the price for the event?,get_event_fees
+1,1,"Due to unavoidable reasons I'm unable to attend the event, will I get a refund?",is_refundable
+2,2,When is the deadline to make the payment?,get_registration_date
+3,3,How much does it cost to register for the event?,get_event_fees
+4,4,Do you have any online payment options for the event? ,get_payment_method
+5,5,When is the last day for payments?,get_registration_date
+6,6,When is the last day to pay?,get_event_fees
+7,7,Can I pay through paytm or UPI?,get_payment_method
+8,8,Can I pay for a ticket at the venue?,get_payment_method
+9,9,What are the prizes up for grabs?,get_prizes
+10,10,Can I cancel my registration after paying the fees?,is_refundable
+11,11,Are there any benefits or discounts?,get_discounts
+12,12,Can I get a refund if I can't make it? ,is_refundable
+13,13,Do you refund the payment? ,get_payment_method
+14,14,"can I pay using Debit cards?, what if my Credit card is not international?",get_payment_method
+15,15,Which debit cards can be used?,get_payment_method
+16,16,hey,greet
+17,17,What is the refund policy? ,is_refundable
+18,18,What are the various payment methods?,get_payment_method
+19,19,Can I have a refund of my money?,is_refundable
+20,20,Can I get the money back?,is_refundable
+21,21,Can I pay later for the event?,get_payment_method
+22,22,Is on spot registration available?,get_payment_method
+23,23,What all Modes of payment are available?,get_payment_method
+24,24,What is the schedule for <date>?,show_schedule
+25,25,How long is the lunch break?,show_schedule
+26,26,When is the event happening?,get_event_date
+27,27,What are the timings for <event_name>? ,get_event_time
+28,28,What is happening at 4 on August 5?,show_schedule
+29,29,Will there be breaks in between technical session on <day>?,show_schedule
+30,30,What is happening on the second day?,show_schedule
+31,31,At what time does the event end?,get_event_time
+32,32,What events are scheduled on august 3rd between 2 to 5?,show_schedule
+34,34,Major events on the first day,show_schedule
+35,35,When does the event end?,get_event_date
+36,36,What is going to happen at 9am on August 4th?,show_schedule
+37,37,When does the event start?,get_event_date
+38,38,Will be get accomodation,show_accomodation
+39,39,Whats happening on 9th July around 9pm?,show_schedule
+40,40,I'd like to get the iteanery.,show_schedule
+41,41,What is the schedule of the event?,show_schedule
+42,42,"What are the events on <date or 1st, 2nd , 3rd day>?",show_schedule
+44,44,What events are going to happen?,get_event_date
+45,45,Can we come a bit late?,get_event_time
+46,46,Where can I find the itinerary?,show_schedule
+47,47, Is there any break?,show_schedule
+48,48,Who are the speakers for <date>?,show_speakers
+49,49,Is there a provision available to meet the speakers after the event?,speaker_details_extra
+50,50,Who is the speaker?,show_speakers
+51,51,Where are the speakers from? ,show_speakers
+52,52,Can I get the email of all the speakers?,show_speakers
+53,53,How many speakers are coming and will there be a Q and A?,show_speakers
+54,54,How many speakers are going to speak in the event?,speaker_details_extra
+55,55,How many speakers are there?,speaker_details_extra
+56,56,Could I know more about the AI Speakers?,speaker_details_extra
+57,57,I'd like to know about the speakers.,speaker_details_extra
+58,58,More about the speakers?,speaker_details_extra
+59,59,Is there a question and answer session with the speakers?,speaker_details_extra
+60,60,Who are the speakers at the event? ,show_speakers
+61,61,Who all are coming for panel discussions? on what days are the best speakers coming?,show_speakers
+62,62,Could I get in touch with a speaker?,speaker_details_extra
+63,63,Where are the speakers from? ,speaker_details_extra
+64,64,Can I have a list of the speakers?,show_speakers
+65,65,Who are speaking in this event?,show_speakers
+66,66,Who all are going to speak in the events?,show_speakers
+67,67,What speakers are coming in the event?,show_speakers
+68,68,Can I have a personal chat with them?,speaker_details_extra
+69,69,Where are they going to stay?,show_accomodation
+70,70,What are the arrangements for food?,show_food_arrangements
+71,71,Do you provide unsweetened drinks for diabetics?,show_food_arrangements
+72,72,Is food provided for all the days till the event ends? ,show_food_arrangements
+73,73,Is food complimentary?,show_food_arrangements
+74,74,Does the registration cost involve food? ,show_food_cost
+75,75,Whats the scene with meals?,show_food_arrangements
+76,76,Is the food unlimited?,show_food_arrangements
+77,77,When is lunch going to be served today?,show_schedule
+78,78,Is food provided?,show_food_arrangements
+79,79,Any payments related to food?,show_food_cost
+80,80,Is food provided three times a day?,show_schedule
+81,81,Will food and snacks be provided? ,show_food_arrangements
+82,82,Do we pay for our own food? How many meals are you providing?,show_food_arrangements
+83,83,Is the food complimentary?,show_food_arrangements
+84,84,Will food be provided? ,show_food_arrangements
+85,85,Are we going to have lunch breaks during the event?,show_schedule
+86,86,Can we bring in food from outside?,show_food_arrangements
+87,87,What kind of food will be provided?,show_food_arrangements
+88,88,Will stay be arranged?,show_accomodation
+89,89,How far is the college from the hotel I will be staying at?,show_accomodation_address
+90,90,How far away from the event is the accomodation arranged?,show_accomodation_address
+91,91,Is accommodation only for participants or for their family too? ,show_accomodation
+92,92,Will you be arranging accommodation?,show_accomodation
+93,93,Does the accommodation have AC?,show_accomodation
+94,94,How far is the accommodation location from the event location?,get_distance
+95,95,Do I have to pay separately for accommodation?,show_accomodation_price
+96,96,How do I commute to the venue from my accommodation?,show_accomodation
+97,97,I'd like to know the details for accommodation.,show_accomodation
+98,98,Detailed information regarding accommodation?,show_accomodation
+99,99,Will you be booking tickets for us if we pay that money?,show_accomodation_price
+100,100,Will accommodation be arranged for participants,show_accomodation
+101,101,Do we pay for our own accommodation? How much would it cost?,show_accomodation_price
+102,102,Is the accommodation provided?,show_accomodation
+103,103,What's the cost of accomodation?,show_accomodation_price
+104,104,Whats the scene with accommodation?,show_accomodation
+105,105,Are the meals going to be provided along with accommodation?,show_accomodation
+106,106,Is the accommodation provided by you?,show_accomodation
+107,107,Can I have the details of the stay?,show_accomodation_address
+108,108,Is the complimentary food given?,show_food_arrangements
+109,109,Is warm water available?,show_accomodation
+110,110,Is AC available?,show_accomodation
+111,111,Any pictures of the rooms?,show_accomodation
+112,112,Any cheaper acco available?,show_accomodation
+113,113,When is event?,get_event_date
+114,114,Where is your penis?,Others
+115,115,Where the hoes at,Others
+116,116,Where the hoes at,Others
+117,117,Fuck my ass,Others
+118,118,How big is Wiz Khalifa's penis,Others
+119,119,Who them speakers?,show_speakers
+120,120,Will I get discounts on registrations?,get_discounts
+121,121,What is the damage?,get_event_fees
+122,122,How far is it?,get_distance
+123,123,When's the party?,show_schedule
+124,124,Where's the party?,get_distance
+125,125,Who the homies on the stage?,show_speakers
+126,126,Where the titties at,Others
+127,127,Is my nigga ZUCCC a liZZZard,Others
+128,128,I want my money back,is_refundable
+129,129,By when can I get my money back?,is_refundable
+130,130,What is the process for refund?,is_refundable
+131,131,What are the prizes?,get_prizes
+132,132,What am I gonna take home?,get_prizes
+133,133,How much should I spend on food?,show_food_cost
+134,134,How many times will we get food?,show_food_arrangements
+135,135,Will Snoop Dogg smoke weed with us?,Others
+136,136,Where will the guests stay?,show_accomodation
+137,137,who are the peopel speaking,show_speakers
+138,138,will there be a place to stay?,show_accomodation_address
+139,139,wheresthe cultural night at,get_location
+140,140,when is the last date to register?,get_registration_date
+141,141,by when can i register?,get_registration_date
+142,142,when is the vellore tour?,get_event_time
+143,143,will i get tshirts?,get_prizes
+144,144,from where will the food come?,show_food_arrangements
+145,145,what are the hotels available?,show_accomodation_address
+146,146,are the speakers qualified?,show_speakers
+147,147,any early bird offers?,get_discounts
+148,148,what will be the menu?,show_food_arrangements
+150,150,i want to know how much the food costs?,show_food_cost
+151,151,how can i pay?,get_payment_method
+152,152,will i get stickers?,get_prizes
+153,153,how many prizes are there?,get_prizes
+154,154,can i talk to the speakers after the event?,speaker_details_extra
+155,155,tell me where the event is happening ,get_location
+156,156,shut up and take my money,get_payment_method
+157,157,who's gonna be talking at the show,show_speakers
+158,158,are the number of delegate positions limited?,get_registration_date
+160,160,how do i get to the venue?,get_distance
+163,163,can i get a map?,get_location
+164,164,what about food?,show_food_cost
+165,165,can I see the schedule,show_schedule
+166,166,what's for food?,show_food_cost
+167,167,I want to know what the prizes are,get_prizes
+168,168,How much?,get_event_fees
+169,169,Let me know about the awards,get_prizes
+170,170,Tell me when the event is beginning,get_event_date
+171,171,When does Deep Learning start,get_registration_date
+172,172,Where is this happening?,get_location
+173,173,How do you want me to pay?,get_payment_method
+174,174,When should I sign up,get_registration_date
+175,175,Fill me in about the speakers,speaker_details_extra
+176,176,What are the conditions to get a discount on the registration fees?,get_discounts
+177,177,What is the prze distribution?,get_prizes
+179,179,How much should I pay for attending the event?,get_event_fees
+180,180,How much does this cost?,get_event_fees
+181,181,How much money should I pay to attend this?,get_event_fees
+182,182,How much would it cost me to attend this event?,get_event_fees
+183,183,If I am not available on those dates later will I get my money back?,is_refundable
+184,184,Can I get my money back if I decide to cancel later?,is_refundable
+185,185,Will I get refunded If i cancel later?,is_refundable
+186,186,Are the event fees refundable?,is_refundable
+187,187,If i choose to drop out later will I get my money back?,is_refundable
+188,188,Can I get my money returned If i can't come,is_refundable
+189,189,Are there any discounts I can avail on the registration fee,get_discounts
+190,190,Any discounts available?,get_discounts
+191,191,Are there any types of fee reductions we can avail?,get_discounts
+192,192,Can I cancel and expect a refund?,is_refundable
+193,193,Are there any discounts applicable for this event?,get_discounts
+194,194,Where do I stay?,show_accomodation
+195,195,How do I pay?,get_payment_method
+196,196,I want to cancel my delegation ,is_refundable
+197,197,What are the last dates for registrations?,get_registration_date
+198,198,When do registrations begin?,get_registration_date
+199,199,When can I apply for this event?,get_registration_date
+200,200,Are there any prizes for this?,get_prizes
+201,201,Where am I traveling ,get_location
+202,202,What is my destination,get_location
+203,203,How far is my destination,get_distance
+204,204,What's the entry fee? ,get_event_fees
+205,205,Will I get my money back if I cancel? ,is_refundable
+206,206,"It's too costly, is there anything I could do to reduce the amount? ",get_discounts
+207,207,When is the last date for registration? ,get_registration_date
+208,208,How can I pay,get_payment_method
+209,209,Will I win anything? ,get_prizes
+210,210,When should I come ,get_event_time
+211,211,Can I stay at my hostel ,show_accomodation
+212,212,Can I increase my network ,show_speakers
+213,213,Where is Sandeep from ,speaker_details_extra
+214,214,What if I get hungry ,show_food_arrangements
+215,215,Where is it,get_distance
+216,216,What are the timings,show_schedule
+217,217,I love IEEE ,Others
+218,218,Where is it tho,get_location
+219,219,Can I get some discounts for the conference,get_discounts
+220,220,What are some of the options where I can stay around,show_accomodation
+221,221,What are some places to stay,show_accomodation
+222,222,Can I get a refund,is_refundable
+223,223,Show some places to eat around,show_food_arrangements
+224,224,I am hungry,show_food_arrangements
+225,225,Best places to get food,show_food_arrangements
+226,226,How much does the food cost?,show_food_cost
+227,227,What are the prizes?,get_prizes
+228,228,How big is my penis?,Others
+229,229,When does this start?,get_event_time
+230,230,Can I speak to the speakers after the event?,speaker_details_extra
+231,231,Can I pay lesser?,get_discounts
+232,232,What's up with the stay for the speakers?,show_accomodation
+233,233,Tell me how far is this event ,get_distance
+234,234,How am I supposed to pay for this ,get_payment_method
+235,235,Location of the venue?,get_location
+236,236,Registration fee?,get_event_fees
+237,237,What are my accommodations like?,show_accomodation
+238,238,What is the refund policy?,is_refundable
+239,239,Are the rooms air-conditioned?,show_accomodation
+240,240,Where is Vellore exactly?,get_location
+241,241,What is the total amount I need to pay?,get_event_fees
+242,242,How much amount of the registration fees will be refunded? ,is_refundable
+243,243,Are there any discount codes? ,get_discounts
+244,244,Any discount coupons? ,get_discounts
+245,245,When is the event starting?,get_registration_date
+246,246,Can I pay by cash? ,get_payment_method
+247,247,What is the reward for 1st place? ,get_prizes
+248,248,When does the event end?,get_event_time
+249,249,Will I be provided accommodation?,show_accomodation
+250,250,Is there a speaker from Google?,show_speakers
+251,251,Can I get more details of the event? ,speaker_details_extra
+252,252,What will be provided for lunch? ,show_food_arrangements
+253,253,How much for dinner? ,show_food_cost
+254,254,How far is the event from Chennai? ,get_distance
+255,255,At what time will snacks be served?,show_schedule
+256,256,When’s the last day of the event?,get_event_date
+257,257,What will I get if I win the event,get_prizes
+258,258,Do I get accommodation if I join ITC,show_accomodation
+259,259,Where is the event,get_location
+260,260,Who else is going to be there,show_speakers
+261,261,When is the ITC starting?,get_event_time
+262,262,Why is melody so chocolaty?,Others
+263,263,Who is the first person to walk on the moon?,Others
+264,264,I want to order a pizza,Others
+265,265,How is life?,Others
+266,266,How to become a fortnite pro?,Others
+267,267,Who killed JFK?,Others
+268,268,hey,greet
+269,269,hello,greet
+270,270,hi,greet
+271,271,yo,greet
+272,272,heyyy,greet
+273,273,heyy,greet
+274,274,heyyyyy,greet
+275,275,hiii,greet
+276,276,who is in charge,greet
+277,277,who is in-charge?,show_contact_info
+278,278,whom can I contact?,show_contact_info
+279,279,"hello, what's up?",greet
+280,280,what can you do?,about_chatbot
+281,281,what are you capable of?,about_chatbot
+282,282,what else can you do?,about_chatbot
+283,283,who are you?,about_chatbot
+284,284,who are you?,about_chatbot
+285,285,what is your purpose?,about_chatbot
+286,286,hello friend,greet
+287,287,hello there,greet
+288,288,Who was the 37th President of the United States?,Others
+289,289,hey,greet
+290,290,hello,greet
+291,291,hi,greet
+292,292,yo,greet
+293,293,heyyy,greet
+294,294,heyy,greet
+295,295,heyyyyy,greet
+296,296,hiii,greet
+297,297,who is in charge,greet
+298,298,who is in-charge?,show_contact_info
+299,299,whom can I contact?,show_contact_info
+300,300,"hello, what's up?",greet
+301,301,what can you do?,about_chatbot
+302,302,what are you capable of?,about_chatbot
+303,303,what else can you do?,about_chatbot
+304,304,who are you?,about_chatbot
+305,305,who are you?,about_chatbot
+306,306,what is your purpose?,about_chatbot
+307,307,hello friend,greet
+308,308,hello there,greet
+309,309,what time is this,get_event_time
+310,310,when is this,get_event_date
+311,311,do i get discounts,get_discounts
+312,312,what will i win,get_prizes
+313,313,what is up with the food,show_food_arrangements
+314,314,what is happening on day 2,show_schedule
