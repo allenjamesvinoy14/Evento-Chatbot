@@ -1,6 +1,7 @@
+tensorflow
+keras
 numpy
 pandas
 nltk
-tensorflow
-keras
 flask
+gensim
