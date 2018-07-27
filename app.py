@@ -11,7 +11,7 @@ import pandas as pd
 import nltk
 
 
-#port = int(os.environ['PORT'])
+port = int(os.environ['PORT'])
 data = pd.read_csv('./data/data.csv')
 
 for index,row in data.iterrows():
@@ -87,4 +87,4 @@ def predict():
 
 
 if __name__ == '__main__':
-    app.run(port = 9000, debug = True)
+    app.run(host = '0.0.0.0', port = port, debug = True)
