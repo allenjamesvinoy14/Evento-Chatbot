@@ -10,10 +10,54 @@
 
     <div>
         <form action="/predict" method="POST">
-                <p>{{ output }}</p>
+                <p><strong>Prediction: </strong>{{ output }}</p>
                 <p id="acc"> <strong> Confidence : {{ acc }} %</strong></p>
                 <p> <input type="text" name="query"></p>
-                <p> <input type="submit" name="answer" value="Predict"></p>        
+                <p>Is the prediction correct?</p>
+                <p>
+                    <input id ="y" type="radio" name="opt" value="Yes" checked>Yes
+                    <input id = "n" type="radio" name="opt" value="No">No
+                </p>
+                <p id="t"></p>
+                <p>
+                    <select id="action" name="action">
+                        <option value="get_event_fees">get_event_fees</option>
+                        <option value="is_refundable">is_refundable</option>
+                        <option value="get_registration_date">get_registration_date</option>
+                        <option value="get_payment_method">get_payment_method</option>
+                        <option value="get_prizes">get_prizes</option>
+                        <option value="get_discounts">get_discounts</option>
+                        <option value="greet">greet</option>
+                        <option value="show_schedule">get_payment_method</option>
+                        <option value="get_payment_method">get_payment_method</option>
+                        <option value="get_event_date">get_event_date</option>
+                        <option value="get_event_time">get_event_time</option>
+                        <option value="show_accomodation">show_accomodation</option>
+                        <option value="show_speakers">show_speakers</option>
+                        <option value="speaker_details_extra">speaker_details_extra</option>
+                        <option value="show_food_arrangements">show_food_arrangements</option>
+                        <option value="get_distance">get_distance</option>
+                        <option value="get_location">get_location</option>
+                        <option value="show_contact_info">show_contact_info</option>
+                        <option value="about_chatbot">about_chatbot</option>
+                      </select>
+                </p>
+                <p> <input type="submit" name="answer" value="Predict"></p>
+        <script>
+            let y = document.getElementById("y");
+            let n = document.getElementById("n");
+            document.getElementById("action").disabled=true;
+
+            y.addEventListener("click",function(){
+                document.getElementById("action").disabled=true;
+                document.getElementById("t").innerHTML=""
+            });
+
+            n.addEventListener("click",function(){
+                document.getElementById("action").disabled=false;
+                document.getElementById("t").innerHTML="Choose correct option"
+            });
+        </script>      
 
         </form>
     </div>

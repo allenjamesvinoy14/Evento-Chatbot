@@ -2,7 +2,6 @@ import keras.models
 import tensorflow as tf   
 from keras.models import model_from_json
 
-tf.reset_default_graph()
 def init():
 
     json_file = open('Model/model.json', 'r')
