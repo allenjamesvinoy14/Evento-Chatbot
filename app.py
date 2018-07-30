@@ -11,7 +11,7 @@ import pandas as pd
 import nltk
 
 
-port = int(os.environ['PORT'])
+#port = int(os.environ['PORT'])
 data = pd.read_csv('./data/data.csv')
 
 for index,row in data.iterrows():
@@ -78,13 +78,21 @@ def index():
 def predict():
 
     query = request.form['query']
+
     with graph.as_default():
 
         action,score = get_prediction(query)
-        return render_template("predict.html",output=action,acc=score)
+        return render_template("predict.html",output=action,acc=score,prev_query=query)
 
-
+#@app.route('/submit', methods=['POST'])
+#def submit():
+#
+#    option = request.form['opt']
+#    if(!option):
+#        correct_method = request.form['action']
+    
+    
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0',port = port, debug = True)
+    app.run(host='localhost',port = 3000, debug = True)
